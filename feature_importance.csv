@@ -1,0 +1,11 @@
+Feature,Importance
+TotalCharges,0.16382448682209738
+tenure,0.14284857078712462
+MonthlyCharges,0.13654157553387794
+Contract_Month-to-month,0.04512612344757245
+PaymentMethod_Electronic check,0.032738461740265026
+OnlineSecurity_No,0.03159200059892087
+InternetService_Fiber optic,0.024974084187440616
+TechSupport_No,0.02493195643929571
+SeniorCitizen,0.019410949869812264
+Contract_Two year,0.018898661997209635
