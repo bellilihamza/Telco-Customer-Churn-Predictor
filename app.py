@@ -34,9 +34,14 @@ st.markdown("""
     .prediction-card {
         padding: 20px;
         border-radius: 10px;
-        background-color: white;
+        background-color: #ffffff !important; /* Force le blanc */
+        color: #000000 !important; /* Force le noir */
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         text-align: center;
+        border: 2px solid #e0e0e0;
+    }
+    .prediction-card h3, .prediction-card p, .prediction-card span {
+        color: #000000 !important; /* Force le texte des titres et probabilités en noir */
     }
     .risk-high {
         color: #dc3545;
