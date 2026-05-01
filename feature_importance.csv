@@ -1,11 +1,11 @@
 Feature,Importance
-Contract_Month-to-month,0.27335207041318077
-tenure,0.26460394816700916
-TotalCharges,0.07796743060101327
-InternetService_Fiber optic,0.0765544358099552
-Contract_One year,0.06383639510021982
-MonthlyCharges,0.04993916195014783
-OnlineSecurity_No,0.041274639191723334
-PaymentMethod_Electronic check,0.03148407809685899
-StreamingMovies_Yes,0.0269331795888389
-PaperlessBilling_Yes,0.021337109381157977
+TotalCharges,16.604690204616382
+MonthlyCharges,16.08400374986011
+tenure,15.173754717065922
+Contract_Month-to-month,4.329342837829181
+Contract_Two year,2.859671729105051
+PaymentMethod_Electronic check,2.280923500806369
+PaperlessBilling_No,2.091587708199658
+MultipleLines_No,2.0823957687930585
+PaperlessBilling_Yes,2.0289135412242745
+InternetService_Fiber optic,1.9691915728731284

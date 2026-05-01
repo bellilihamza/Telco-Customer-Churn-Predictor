@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import AdaBoostClassifier
+from catboost import CatBoostClassifier
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -36,10 +36,10 @@ preprocessor = ColumnTransformer(
         ('cat', OneHotEncoder(handle_unknown='ignore'), cat_cols)
     ])
 
-# 5. Pipeline complet avec AdaBoost
+# 5. Pipeline complet avec CatBoost
 model = Pipeline(steps=[
     ('preprocessor', preprocessor),
-    ('classifier', AdaBoostClassifier(n_estimators=100, random_state=42))
+    ('classifier', CatBoostClassifier(iterations=1000, learning_rate=0.05, depth=6, verbose=0, random_seed=42))
 ])
 
 # 6. Entraînement

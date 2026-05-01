@@ -182,6 +182,6 @@ with col2:
     
     st.markdown("---")
     st.write("Précision globale du modèle :")
-    st.progress(0.81) 
+    st.progress(0.80) 
 
 st.caption("Application développée pour la validation de l'examen de Machine Learning - 2026")
