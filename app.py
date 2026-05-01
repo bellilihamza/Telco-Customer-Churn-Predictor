@@ -11,6 +11,12 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# Affichage du logo dans la barre latérale
+try:
+    st.sidebar.image('téléchargement.png', use_container_width=True)
+except:
+    pass
+
 # Style CSS personnalisé pour un look premium
 st.markdown("""
     <style>
@@ -28,14 +34,9 @@ st.markdown("""
     .prediction-card {
         padding: 20px;
         border-radius: 10px;
-        background-color: #ffffff;
-        color: #1f1f1f; /* Texte sombre pour être lisible sur fond blanc */
+        background-color: white;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         text-align: center;
-        border: 1px solid #e0e0e0;
-    }
-    .prediction-card h3, .prediction-card p {
-        color: #1f1f1f; /* Assure que les titres et paragraphes sont sombres */
     }
     .risk-high {
         color: #dc3545;
@@ -159,7 +160,7 @@ with col2:
     except:
         st.info("Importance des variables non disponible.")
 
-    st.subheader("💡 Actions Recommandées")
+    st.subheader("💡 Actions Recommandées")             
     recoms = []
     if input_df['Contract'][0] == 'Month-to-month':
         recoms.append("🎯 **Fidélisation** : Proposer un passage à un contrat annuel.")
